@@ -1,0 +1,30 @@
+{
+  "presentationTable" : {
+    "name" : "Products",
+    "presentationColumns" : [ {
+      "name" : "Brand",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 products.Brand"
+    }, {
+      "name" : "Product",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 products.Prod dsc"
+    }, {
+      "name" : "Type",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 products.Type"
+    }, {
+      "name" : "Line of Business",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 products.Lob"
+    }, {
+      "name" : "Sequence",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 products.Sequence"
+    }, {
+      "name" : "Brand key",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 products.Brand key"
+    }, {
+      "name" : "Lob key",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 products.Lob key"
+    }, {
+      "name" : "Type key",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 products.Type key"
+    } ]
+  }
+}

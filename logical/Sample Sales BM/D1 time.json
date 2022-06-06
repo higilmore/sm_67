@@ -1,0 +1,704 @@
+{
+  "logicalTable" : {
+    "name" : "D1 time",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Calendar date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.CALENDAR_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Day key",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAY_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cal half",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.CAL_HALF" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cal month",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.CAL_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cal qtr",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.CAL_QTR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cal week",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.CAL_WEEK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cal year",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.CAL_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Day of month",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAY_OF_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Day of week",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAY_OF_WEEK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Day of year",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAY_OF_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fscl half",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.FSCL_HALF" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fscl month",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.FSCL_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fscl qtr",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.FSCL_QTR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fscl week",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.FSCL_WEEK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fscl year",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.FSCL_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Julian day num",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.JULIAN_DAY_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Julian month num",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.JULIAN_MONTH_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Julian qtr num",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.JULIAN_QTR_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Julian week num",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.JULIAN_WEEK_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Per name half",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.PER_NAME_HALF" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Per name month",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.PER_NAME_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Per name qtr",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.PER_NAME_QTR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Per name week",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.PER_NAME_WEEK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Per name year",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.PER_NAME_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days in qtr",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAYS_IN_QTR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days in mth",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAYS_IN_MTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Beg of qtr wid",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.BEG_OF_QTR_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Beg of mth wid",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.BEG_OF_MTH_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Beg of week wid",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.BEG_OF_WEEK_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Holiday",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.HOLIDAY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Loaded",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.LOADED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cal month end date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.CAL_MONTH_END_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cal qtr end date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.CAL_QTR_END_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cal half year end date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.CAL_HALF_YEAR_END_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cal year end date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.CAL_YEAR_END_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fscl month end date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.FSCL_MONTH_END_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fscl qtr end date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.FSCL_QTR_END_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fscl year end date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.FSCL_YEAR_END_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cal week end date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.CAL_WEEK_END_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fscl week end date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.FSCL_WEEK_END_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days in week",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAYS_IN_WEEK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days in half year",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAYS_IN_HALF_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days in year",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAYS_IN_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days in fscl week",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAYS_IN_FSCL_WEEK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days in fscl month",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAYS_IN_FSCL_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days in fscl qtr",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAYS_IN_FSCL_QTR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days in fscl half year",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAYS_IN_FSCL_HALF_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days in fscl year",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.DAYS_IN_FSCL_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Total value",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MySampleSalesDatabase.BISAMPLE.D1 Time.TOTAL_VALUE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D1 Time",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:MySampleSalesDatabase.BISAMPLE.D1 Time" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "CALENDAR_DATE" ]
+  }
+}
